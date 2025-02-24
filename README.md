@@ -21,8 +21,8 @@ A modern, interactive portfolio website featuring a unique terminal-style interf
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR-USERNAME/minimalist-homepage.git
-cd minimalist-homepage
+git clone https://github.com/Realistic-Talha/portfolio-website.git
+cd portfolio-website
 ```
 
 2. Install dependencies:
@@ -57,10 +57,10 @@ Available commands in the interactive terminal:
 ## Customization
 
 1. Update personal information in `app/page.tsx`
-2. Modify tech stack and skill levels
-3. Add your own projects to the featured section
+2. Modify tech stack and skill levels in `data/skills.ts`
+3. Add your own projects in `data/projects.ts`
 4. Customize colors in `tailwind.config.js`
-5. Update social links in footer
+5. Update social links in `components/Footer.tsx`
 
 ## License
 
@@ -68,4 +68,10 @@ MIT License - feel free to use this for your own portfolio!
 
 ## Author
 
-[Your Name](https://github.com/YOUR-USERNAME)
+[Talha Rana](https://github.com/Realistic-Talha)
+
+## Connect With Me
+
+- GitHub: [@Realistic-Talha](https://github.com/Realistic-Talha)
+- Portfolio: [Your Portfolio URL]
+- LinkedIn: [Your LinkedIn URL]
