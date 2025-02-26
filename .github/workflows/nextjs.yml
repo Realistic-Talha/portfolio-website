@@ -3,7 +3,7 @@ name: Deploy Next.js site to Pages
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
+  workflow_dispatch:    # This allows manual triggers
 
 permissions:
   contents: read
