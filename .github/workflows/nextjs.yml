@@ -3,7 +3,7 @@ name: Deploy Next.js site to Pages
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:    # This allows manual triggers
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -24,11 +24,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: 'npm'
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install sharp
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Install dependencies
-        run: npm ci
+        with:
+          static_site_generator: next
       - name: Build with Next.js
         run: npm run build
       - name: Upload artifact
